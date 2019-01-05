@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../js/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/comment/iziModal.min.css">
+    <link rel="stylesheet" href="../css/comment/load.css">
+    <link rel="stylesheet" href="../css/public.css" type="text/css">
+    <link rel="stylesheet" href="../css/index.css" type="text/css">
+    <title>八度夭酒店登录</title>
+</head>
+
+<body style="overflow:hidden;">
+
+<!--登录BOX-->
+<div class="login-box">
+    <!--登录标题-->
+    <div class="login-title">请登录您的账号</div>
+    <!--登录表单-->
+    <form class="layui-form" onsubmit="return false">
+        <div class="layui-inline">
+            <i class="iconfont icon-before"></i>
+            <input class="login-input" type="text" name="username" id="login_username" autocomplete="off"
+                   placeholder="用户名"/><i
+                class="iconfont icon-yonghu-tianchong icon-index" title="欢迎登录"></i>
+            <span id="verifyUser"></span>
+        </div>
+        <div class="layui-inline">
+            <i class="iconfont icon-before"></i>
+            <input class="login-input" type="password" name="password" id="login_password" autocomplete="off"
+                   placeholder="输入密码"/><i class="iconfont icon-key2 icon-index"></i>
+            <span id="verifyPassword"></span>
+        </div>
+        <div class="layui-inline">
+            <i class="iconfont icon-before"></i>
+            <input class="login-input-verification" type="text" name="verificationCode" id="login_verificationCode"
+                   autocomplete="off"
+                   placeholder="请输入验证码" maxlength="4"/><i
+                class="iconfont icon-close-b icon-index icon-index-verification" style="cursor: pointer;" title="清空"></i>
+            <div class="verification-code" id="verificationCode">
+                <img src="" alt="验证码" style="width: 120px; cursor: pointer;" title="获取新的验证码"/>
+            </div>
+            <span id="verifyCode"></span>
+        </div>
+        <button class="login-button">登录</button>
+        <!--            <button class="login-register">注册</button>-->
+    </form>
+</div>
+<!--页面尾部-->
+<footer>
+    <label class="company-info">八度夭酒店©Copyright</label>
+</footer>
+
+<!--虚化背景图-->
+<div class="bg-transparent">
+</div>
+
+<script src="../js/comment/jquery-2.0.3.min.js"></script>
+<script src="../js/layui/layui.all.js"></script>
+<script src="../js/comment/iziModal.min.js"></script>
+<script src="../js/public.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/index.js"></script>
+</body>
+
+</html>
